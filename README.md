@@ -28,8 +28,8 @@ Evaluates FLAN-T5 models of five sizes on the data files with 10 x 3 prompts and
 
 ## Running SpanBERT
 
-`python3 scripts/spanbert_inputs.py path/to/stimuli path/to/vocab/file`
-Converts stimuli into jsonlines format for SpanBERT and creates two files: `single.jsonlines` and `double.jsonlines`
+`python3 scripts/convert_for_spanbert.py path/to/vocab/file`
+Tokenizes `double.tsv`, `single.tsv` and `double_old.tsv` and converts them to jsonlines format for SpanBERT, creating the files: `spanbert/single.jsonlines`, `spanbert/double.jsonlines`, and `spanbert/double_old.jsonlines`.
 
 ## Running CAW-coref
 
